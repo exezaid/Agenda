@@ -17,9 +17,9 @@
     <td><%= persona.apellido %></td>
     <td><%= persona.bio %></td>
     <td><%= persona.activo %></td>
-    <td><%= link_to 'Show', persona %></td>
-    <td><%= link_to 'Edit', edit_persona_path(persona) %></td>
-    <td><%= link_to 'Destroy', persona, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Mostrar', persona %></td>
+    <td><%= link_to 'Editar', edit_persona_path(persona) %></td>
+    <td><%= link_to 'Borrar', persona, :confirm => 'Estas seguro?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
