@@ -1,3 +1,3 @@
 class Persona < ActiveRecord::Base
-  validates_presence_of :apellido
+  validates_presence_of :apellido, :nombre
 end
