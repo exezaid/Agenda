@@ -1,5 +1,5 @@
 Prueba1::Application.routes.draw do
-  resources :personas
+  resources :personas, :path => "people"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -50,7 +50,12 @@ Prueba1::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "mensajes#hola"
+  match 'chau' => 'mensajes#chau', :as => :salir
+  match 'test' => 'mensajes#prueba', :as => :test
+  match 'algo' => 'mensajes#algo', :as => :algos
+
+
 
   # See how all your routes lay out with "rake routes"
 
